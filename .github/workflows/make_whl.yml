@@ -40,7 +40,7 @@ jobs:
       - name: 正在编译 ${{ matrix.python-version }} 的Whl文件
         run: |
           # 填写需要编译Whl包的Git仓库，此处以QPT为例
-          git clone https://github.com/redforg/pymy-webrtcvad.git
+          git clone https://github.com/redforg/pymy-webrtcvad
           cd pymy-webrtcvad
           python -m pip install -U setuptools wheel
           python setup.py sdist bdist_wheel
